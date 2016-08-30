@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>公众号</title>
+    <link rel="stylesheet" type="text/css" href="publish/css/base.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div id="z-wrap">
+
+        <!--    标题    -->
+        <div class="z-tit">
+            <h3>2016年陕西省</h3>
+            <h2>体育行业职业技能大赛</h2>
+            <h1>评选活动</h1>
+        </div>
+        <!-- 内容 -->
+        <div class="z-content">
+            <div class="z-danwei">
+                <div class="col-xs-4">主办单位：</div>
+                <div class="col-xs-2">
+
+                </div>
+                <div class="col-xs-4">承办单位：</div>
+                <div class="col-xs-2">
+
+                </div>
+            </div>
+            <div class="z-shuoming">
+                <input class="change" type="button" value="评选说明">
+            </div>
+            <div class="z-textarea">
+                <div id="z-msg"><img src="images/z-mn4.png" alt="" /></div>
+            </div>
+            <div class="z-piaoshu">
+                <div class="col-xs-4">投票人数：</div>
+                <div class="col-xs-2">
+                    <input type="text">
+                </div>
+                <div class="col-xs-4">关注度：</div>
+                <div class="col-xs-2">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="z-shuoming marg">
+                <input id="z-jx" type="button" value="各奖项投票">
+            </div>
+            <div class="z-shuoming marg">
+                <input id="z-ph" type="button" value="投票排行榜">
+            </div>
+        </div>
+        <!--    弹窗    -->
+        <div class="z-tc">
+            <div class="z-close"><img src="images/z-close.png" alt=""></div>
+            <p class="zTC-tit">评选说明：</p>
+            <p>网上评选活动在2016年9月24日结束，9月25日由评选委员会公布评选结果，投票期间每人每天只能投一票，为防止恶意刷票，一经查实，取消参选资格。</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/common.js"></script>
+    <script>
+        $(function() {
+            $("#z-jx").on("click", function() {
+                window.location = "z-gjxtpy.html";
+            });
+            $("#z-ph").on("click", function() {
+                window.location = "z-phblby.html";
+            });
+            $(".z-shuoming").find("input").on("click", function() {
+                $(".z-tc").show();
+            });
+            $(".z-close").on("click", function() {
+                $(".z-tc").hide();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
